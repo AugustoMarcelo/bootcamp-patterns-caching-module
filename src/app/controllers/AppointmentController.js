@@ -47,7 +47,7 @@ class AppointementController {
   }
 
   async delete(req, res) {
-    const appointment = CancelAppointmentService.run({
+    const appointment = await CancelAppointmentService.run({
       provider_id: req.params.id,
       user_id: req.userId,
     });
