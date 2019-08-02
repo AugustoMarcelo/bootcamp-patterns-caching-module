@@ -7,7 +7,7 @@ import CancelAppointmentService from '../services/CancelAppointmentService';
 
 import Cache from '../../lib/Cache';
 
-class AppointementController {
+class AppointmentController {
   async index(req, res) {
     const { page = 1 } = req.query;
 
@@ -67,4 +67,4 @@ class AppointementController {
   }
 }
 
-export default new AppointementController();
+export default new AppointmentController();
